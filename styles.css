@@ -1,0 +1,252 @@
+html {
+    background-color: #000;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.centered-container {
+    margin: 0 auto;
+}
+.nav {
+    padding: 15px 20px 10px;
+    background-color: #111;
+    color: #fff;
+}
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 0px 0px 20px 0px;
+}
+.nav-content {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    color: #ccc;
+    padding: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-social {
+    margin: 12px 0px;
+}
+.footer-social-icons {
+    width: 20px;
+    fill: #ccc;
+    margin-right: 41px;
+}
+.footer-right {
+    width: auto;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+.footer-links {
+    color: #ccc;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-bottom: 16px;
+}
+
+.text {
+    color: #fff;
+}
+
+h2 {
+    color: #79dcf6;
+}
+
+.image {
+    max-width: 100%;
+}
+.logo {
+    height: 40px;
+}
+.kc-neon {
+    width: 500px;
+}
+.dt-img {
+    width: 300px;
+}
+
+.announcing {
+    display: flex;
+    flex-direction: column;
+}
+.announcement-box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: -80px;
+}
+.announcement-text {
+    margin-left: -30px;
+    padding-right: 30px;
+}
+
+.btn-bottom {
+    margin-bottom: 20px !important;
+}
+
+
+@media (min-width: 200px) {
+    .container {
+        max-width: 960px;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-box {
+        min-height: calc(100vh - 241px);
+    }
+
+    .page-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .page-right {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .page {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .page-box {
+        min-height: calc(100vh - 120px);
+    }
+
+    .page-left, .footer-left {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        justify-content: left;
+        width: 100%;
+    }
+    
+    .page-right {
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+
+
+}
+
+
+/* Signup form container */
+#mc_embed_signup { 
+    border: none; width: 100%; 
+} 
+
+/* positions input field horizontally */
+.mc-field-group { 
+    display: inline-block; 
+} 
+
+ /* Input Styles */
+#mce-EMAIL { 
+    font-size: 1em; 
+    width: 300px;
+    border: 2px solid #ABB0B2; 
+    color: #343434; 
+    background-color: #fff; 
+    padding: .7em .9em .7em 1em; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+    display: inline-block; 
+    margin: 0; 
+}
+
+/* positions button horizontally in line with input */
+.clear { 
+    display: inline-block; 
+} 
+
+/* Button Styles */
+.button { 
+    font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; 
+    font-size: 1em; 
+    letter-spacing: .03em; 
+    color: #fff; 
+    background-color: #2386C8; 
+    padding: .7em 2em; 
+    border: 2px solid #2386C8; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+    display: inline-block; 
+    margin: 0;
+    text-decoration: none;
+} 
+
+.button:hover {
+    cursor: pointer;
+}
+
+:-webkit-input-placeholder { color: #ABB0B2 ; } /* WebKit browsers */ 
+:-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #ABB0B2 ; } /* Internet Explorer 10+ */
+
+/* positions input field and button underneath each other with 100% width for tablet and mobile */
+@media (max-width: 768px) { 
+    .mc-field-group { 
+        display: block; 
+        max-width: 100%; 
+    }
+    #mce-EMAIL { 
+        padding: .7em 0 .7em 1em; 
+        width: 96%; 
+        margin: 0; 
+    }
+    .clear { 
+        display: block; 
+        width: 100% 
+    }
+    .button { 
+        width: 100%; 
+        margin: .5em 0 0 0; 
+    }
+}
