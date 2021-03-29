@@ -92,6 +92,8 @@ h3,
 
 .announcing-img {
   width: 300px;
+  height: 200px;
+  /* added for JG */
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -139,8 +141,10 @@ h3,
 }
 
 .announcement-text {
-  margin-left: -30px;
-  padding-right: 30px;
+  /* margin-left: -30px;
+  padding-right: 30px; */
+  margin-left: 0px;
+  padding-right: 60px;
 }
 
 .btn-bottom {
@@ -462,8 +466,6 @@ h3,
   opacity: 1;
 }
 
-
-/* 
 .carousel__activator:nth-of-type(4):checked~.carousel__track {
   transform: translateX(-300%);
 }
@@ -486,6 +488,8 @@ h3,
   opacity: 1;
 }
 
+
+/* 
 .carousel__activator:nth-of-type(5):checked~.carousel__track {
   transform: translateX(-400%);
 }
@@ -591,12 +595,12 @@ h3,
   transform: translateX(200%);
 }
 
-
-/* .carousel__track .carousel__slide:nth-of-type(4) {
+.carousel__track .carousel__slide:nth-of-type(4) {
   transform: translateX(300%);
 }
 
-.carousel__track .carousel__slide:nth-of-type(5) {
+
+/* .carousel__track .carousel__slide:nth-of-type(5) {
   transform: translateX(400%);
 } */
 
@@ -654,31 +658,31 @@ body {
 }
 
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("./assets/hackers/sarah-edwards.png");
+  background-image: url("./assets/hackers/joe-grand.png");
   background-size: cover;
   background-position: center;
 }
 
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("./assets/hackers/chris-eagle.png");
+  background-image: url("./assets/hackers/sarah-edwards.png");
   background-size: cover;
   background-position: center;
 }
 
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("./assets/hackers/chris-eagle.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
   background-image: url("./assets/hackers/jh-headshot.png");
   background-size: cover;
   background-position: center;
 }
 
 
-/* .carousel__slide:nth-of-type(4),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  background-image: url("https://unsplash.it/1200?random");
-  background-size: cover;
-  background-position: center;
-}
-
+/* 
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
   background-image: url("https://unsplash.it/1500?random");
@@ -775,7 +779,8 @@ body {
 }
 
 .character-img {
-  width: 110px;
+  max-width: 110px;
+  max-height: 130px;
   padding-bottom: 20px;
 }
 
@@ -1055,6 +1060,58 @@ table th,
 }
 
 .se-tabset>input:checked+label {
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  background: #343434;
+}
+
+.jg-tabset>input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.jg-tabset .tab-panel {
+  display: none;
+}
+
+.jg-tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.jg-tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.jg-tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3) {
+  display: block;
+}
+
+.jg-tabset>label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.jg-tabset>label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.jg-tabset>label:hover,
+.jg-tabset>input:focus+label {
+  color: #79dcf6;
+}
+
+.jg-tabset>label:hover::after,
+.jg-tabset>input:focus+label::after,
+.jg-tabset>input:checked+label::after {
+  background: #79dcf6;
+}
+
+.jg-tabset>input:checked+label {
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
   background: #343434;
