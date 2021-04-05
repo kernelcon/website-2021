@@ -138,7 +138,7 @@ h3,
 }
 
 .announcing-img {
-  width: 300px;
+  /* width: 300px; wrong width for JG */
   height: 200px;
   /* added for JG */
   -webkit-filter: grayscale(100%);
