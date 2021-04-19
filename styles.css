@@ -2,7 +2,7 @@ html {
   background-color: #000;
   scroll-behavior: smooth;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -62,6 +62,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.dual-logo-line-st {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .nav-links {
@@ -326,10 +332,10 @@ h3,
 #mce-EMAIL {
   font-size: 1em;
   width: 300px;
-  border: 2px solid #ABB0B2;
+  border: 2px solid #abb0b2;
   color: #343434;
   background-color: #fff;
-  padding: 1.3em .9em 1.3em 1em;
+  padding: 1.3em 0.9em 1.3em 1em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -348,14 +354,14 @@ h3,
 /* Button Styles */
 
 .button {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   color: #fff;
-  background-color: #2386C8;
-  border: 2px solid #2386C8;
+  background-color: #2386c8;
+  border: 2px solid #2386c8;
   -webkit-border-radius: 3px;
-  padding: .7em 2em;
+  padding: 0.7em 2em;
   -moz-border-radius: 3px;
   border-radius: 3px;
   display: inline-block;
@@ -368,28 +374,28 @@ h3,
 }
 
 :-webkit-input-placeholder {
-  color: #ABB0B2;
+  color: #abb0b2;
 }
 
 
 /* WebKit browsers */
 
 :-moz-placeholder {
-  color: #ABB0B2;
+  color: #abb0b2;
 }
 
 
 /* Mozilla Firefox 4 to 18 */
 
 ::-moz-placeholder {
-  color: #ABB0B2;
+  color: #abb0b2;
 }
 
 
 /* Mozilla Firefox 19+ */
 
 :-ms-input-placeholder {
-  color: #ABB0B2;
+  color: #abb0b2;
 }
 
 
@@ -404,17 +410,17 @@ h3,
     max-width: 100%;
   }
   #mce-EMAIL {
-    padding: .7em 0 .7em 1em;
+    padding: 0.7em 0 0.7em 1em;
     width: 96%;
     margin: 0;
   }
   .clear {
     display: block;
-    width: 100%
+    width: 100%;
   }
   .button {
     width: 100%;
-    margin: .5em 0 0 0;
+    margin: 0.5em 0 0 0;
   }
 }
 
@@ -781,7 +787,7 @@ body {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 0px 20px
+  padding: 0px 20px;
 }
 
 .character-heading {
@@ -861,11 +867,9 @@ body {
   padding: 5px;
   text-align: center;
   letter-spacing: 1px;
-  ;
 }
 
-.character-attribute-table,
-td {
+.character-attribute-table>tbody>tr>td {
   /* border: 1px solid #999; */
   border-collapse: collapse;
   width: 100%;
@@ -1307,19 +1311,19 @@ ol.gradient-list>li::before {
 }
 
 ol.gradient-list>li:nth-child(10n+1):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.2) 0%, rgba(232, 161, 183, 0.2) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.2) 0%, rgba(232, 161, 183, 0.2) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+2):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.4) 0%, rgba(232, 161, 183, 0.4) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.4) 0%, rgba(232, 161, 183, 0.4) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+3):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.6) 0%, rgba(232, 161, 183, 0.6) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.6) 0%, rgba(232, 161, 183, 0.6) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+4):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.8) 0%, rgba(232, 161, 183, 0.8) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.8) 0%, rgba(232, 161, 183, 0.8) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+5):before {
@@ -1327,23 +1331,23 @@ ol.gradient-list>li:nth-child(10n+5):before {
 }
 
 ol.gradient-list>li:nth-child(10n+6):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.8) 0%, rgba(232, 161, 183, 0.8) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.8) 0%, rgba(232, 161, 183, 0.8) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+7):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.6) 0%, rgba(232, 161, 183, 0.6) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.6) 0%, rgba(232, 161, 183, 0.6) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+8):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.4) 0%, rgba(232, 161, 183, 0.4) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.4) 0%, rgba(232, 161, 183, 0.4) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+9):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0.2) 0%, rgba(232, 161, 183, 0.2) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0.2) 0%, rgba(232, 161, 183, 0.2) 100%);
 }
 
 ol.gradient-list>li:nth-child(10n+10):before {
-  background: linear-gradient(135deg, rgba(121, 220, 246, 0) 0%, rgba(232, 161, 183, 0) 100%);
+  background: linear-gradient( 135deg, rgba(121, 220, 246, 0) 0%, rgba(232, 161, 183, 0) 100%);
 }
 
 ol.gradient-list>li+li {
@@ -1371,7 +1375,7 @@ button {
 }
 
 .cybr-btn {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+  --primary: hsl( var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 210;
   --primary-lightness: 50;
@@ -1383,14 +1387,14 @@ button {
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --border: 4px;
   --shimmy-distance: 5;
-  --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
-  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
-  --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
-  --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
-  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-  font-family: 'Cyber', sans-serif;
+  --clip-one: polygon( 0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+  --clip-two: polygon( 0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+  --clip-three: polygon( 0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+  --clip-four: polygon( 0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-five: polygon( 0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-six: polygon( 0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+  --clip-seven: polygon( 0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+  font-family: "Cyber", sans-serif;
   color: var(--color);
   cursor: pointer;
   background: transparent;
@@ -1407,23 +1411,23 @@ button {
   margin: 20px 0px;
   transition: background 0.2s;
   -webkit-border-radius: 3px;
-  padding: .7em 2em;
+  padding: 0.7em 2em;
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-decoration: none;
 }
 
 .cybr-btn:hover {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+  --primary: hsl( var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
 }
 
 .cybr-btn:active {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+  --primary: hsl( var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
 }
 
 .cybr-btn:after,
 .cybr-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1472,7 +1476,7 @@ button {
 }
 
 .cybr-btn__glitch:before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(var(--border) * 1);
   right: calc(var(--border) * 1);
@@ -1578,7 +1582,7 @@ button {
 }
 
 .platinum-sponsor {
-  max-width: 600px
+  max-width: 600px;
 }
 
 .silver-sponsor {
@@ -1720,4 +1724,174 @@ button {
 .email {
   color: #79dcf6;
   text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-spacing: 0px !important;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #484e51;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #484e51;
+}
+
+.table tbody+tbody {
+  border-top: 2px solid #484e51;
+}
+
+.table .table {
+  background-color: #fff;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
+
+.table-bordered {
+  border: 1px solid #484e51;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #484e51;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-active,
+.table-active>th,
+.table-active>td {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover>td,
+.table-hover .table-active:hover>th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-success,
+.table-success>th,
+.table-success>td {
+  background-color: #dff0d8;
+}
+
+.table-hover .table-success:hover {
+  background-color: #d0e9c6;
+}
+
+.table-hover .table-success:hover>td,
+.table-hover .table-success:hover>th {
+  background-color: #d0e9c6;
+}
+
+.table-info,
+.table-info>th,
+.table-info>td {
+  background-color: #d9edf7;
+}
+
+.table-hover .table-info:hover {
+  background-color: #c4e3f3;
+}
+
+.table-hover .table-info:hover>td,
+.table-hover .table-info:hover>th {
+  background-color: #c4e3f3;
+}
+
+.table-warning,
+.table-warning>th,
+.table-warning>td {
+  background-color: #fcf8e3;
+}
+
+.table-hover .table-warning:hover {
+  background-color: #faf2cc;
+}
+
+.table-hover .table-warning:hover>td,
+.table-hover .table-warning:hover>th {
+  background-color: #faf2cc;
+}
+
+.table-danger,
+.table-danger>th,
+.table-danger>td {
+  background-color: #f2dede;
+}
+
+.table-hover .table-danger:hover {
+  background-color: #ebcccc;
+}
+
+.table-hover .table-danger:hover>td,
+.table-hover .table-danger:hover>th {
+  background-color: #ebcccc;
+}
+
+.thead-inverse th {
+  color: #fff;
+  background-color: #292b2c;
+}
+
+.thead-default th {
+  color: #464a4c;
+  background-color: #eceeef;
+}
+
+.table-inverse {
+  color: #fff;
+  background-color: #292b2c;
+}
+
+.table-inverse th,
+.table-inverse td,
+.table-inverse thead th {
+  border-color: #fff;
+}
+
+.table-inverse.table-bordered {
+  border: 0;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-spacing: 0px;
+}
+
+.table-responsive.table-bordered {
+  border: 0;
+}
+
+.time-td {
+  width: 100px;
 }
